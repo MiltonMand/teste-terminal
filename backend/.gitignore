@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+
+# Dependências de build
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Diretórios de build e logs
+/dist
+/build
+/.next
+/.nuxt
+/.serverless
+/.vercel
+
+# Arquivos de configuração específicos do IDE
+.vscode/
+.idea/
+
+# Arquivos de ambiente
+.env
+
+# Banco de dados local
+*.sqlite
+*.db
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Outros arquivos desnecessários
+*.log
