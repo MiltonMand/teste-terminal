@@ -18,6 +18,10 @@ mongoose
     .catch((erro) => console.error('Erro ao conectar ao MongoDB:', erro));
 
 // Rotas
+app.get('/', (req, res) => {
+    res.send('servidor rodando')
+})
+
 app.get('/usuarios', async (req, res) => {
     const filtros = {};
     if (req.query.idade) filtros.idade = { $gt: Number(req.query.idade) };
