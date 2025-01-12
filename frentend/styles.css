@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+form, #filtros {
+    margin-bottom: 20px;
+}
+
+#listaUsuarios {
+    margin-top: 20px;
+}
+
+.usuario {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 200px;
+}

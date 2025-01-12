@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Usuários</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gerenciamento de Usuários</h1>
+    <form id="formUsuario">
+        <input type="text" id="nome" placeholder="Nome" required />
+        <input type="number" id="idade" placeholder="Idade" required />
+        <select id="genero">
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outro">Outro</option>
+        </select>
+        <button type="submit">Adicionar Usuário</button>
+    </form>
+
+    <form id="formUsuarioedit">
+        <input type="text" id="nomeedit" placeholder="Nome" />
+        <input type="number" id="idadeedit" placeholder="Idade" />
+        <select id="generoedit">
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outro">Outro</option>
+        </select>
+        <button type="submit" id="editBtn">Editar Usuário</button>
+    </form>
+
+    <div id="filtros">
+        <input type="number" id="filtroIdade" placeholder="Idade mínima" />
+        <input type="text" id="filtroNome" placeholder="Nome do usuário" />
+        <select id="filtroGenero">
+            <option value="">Todos</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outro">Outro</option>
+        </select>
+        <button id="aplicarFiltros">Filtrar</button>
+    </div>
+    <div id="listaUsuarios"></div>
+    <script src="app.js"></script>
+</body>
+</html>
