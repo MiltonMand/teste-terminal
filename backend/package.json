@@ -1,11 +1,12 @@
 {
-  "name": "pj1",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo 'Nothing to build for Node.js'"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +18,8 @@
     "express": "^4.21.1",
     "mongodb": "^6.12.0",
     "mongoose": "^8.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }

@@ -1,4 +1,4 @@
-const URL_API = 'http://localhost:5000/usuarios';
+const URL_API = 'https://teste-terminal.vercel.app/usuarios';
 
 // Buscar usuários e exibi-los
 async function buscarUsuarios(filtros = {}) {

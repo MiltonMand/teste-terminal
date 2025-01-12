@@ -19,7 +19,7 @@ mongoose
 
 // Rotas
 app.get('/', (req, res) => {
-    res.send('servidor rodando')
+    return res.send('Servidor Express na Vercel!');
 })
 
 app.get('/usuarios', async (req, res) => {
@@ -29,24 +29,24 @@ app.get('/usuarios', async (req, res) => {
     if (req.query.nome) filtros.nome = req.query.nome;
 
     const usuarios = await Usuario.find(filtros);
-    res.json(usuarios);
+    return res.json(usuarios);
 });
 
 app.get('/usuarios/:id', async (req, res) => {
     const usuarios = await Usuario.findOne(req.params.id);
-    res.json(usuarios);
+    return res.json(usuarios);
 });
 
 app.post('/usuarios', async (req, res) => {
     const { nome, idade, genero } = req.body;
     const usuario = new Usuario({ nome, idade, genero });
     await usuario.save();
-    res.status(201).json(usuario);
+    return res.status(201).json(usuario);
 });
 
 app.delete('/usuarios/:id', async (req, res) => {
     await Usuario.findByIdAndDelete(req.params.id);
-    res.json({ mensagem: 'Usuário deletado!' });
+    return res.json({ mensagem: 'Usuário deletado!' });
 });
 
 app.put('/usuarios/:id', async (req, res) => {
